@@ -1,0 +1,19 @@
+body{
+    background-image:url(../images/com.jpg) ;
+    background-size: 100%;
+  }
+  
+  #logout{
+    color: black;
+    border-color: brown black
+  }
+  
+  #buttonRetro{
+    color: black;
+    border-color: brown black;
+  }
+  
+  .d-flex2 :hover{
+    background: rgba(217, 97, 233, 0.616);
+  }
+  
