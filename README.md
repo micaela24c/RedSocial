@@ -8,10 +8,4 @@
 
 #### Brindarle a las personas interesadas en probar nuevos platillos en lugares diferentes opiniones de personas que ya tuvieron la experiencia de consumir ahí.
 
-## ¿Cuáles son las secciones de la página?
-
-#### - Inicio: Se encuentran las películas más buscadas por las personas
-#### - Mejores taquillas: Los estrenos más exitosos
-#### - Sobre nosotras: Acerca de las creadoras de la página
-
 https://micaela24c.github.io/RedSocial/
