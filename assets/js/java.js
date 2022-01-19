@@ -147,3 +147,27 @@ $(document).ready(function () {
   });
 
 });
+
+// Ingreso con usuario y contraseña
+$("#btnIngresoMail").click(function) {
+  $("#ingresoMail").style.display = "block";
+  $("#btnIngresoMail").style.display = "none";
+  $("#btnIngresoGmail").style.display = "none";
+})
+
+$("#btnIngresoConMail").click("click", function () {
+  var email = document.getElementById("ingresoEmail").val;
+  var password = document.getElementById("ingresoPassword").val;
+
+  auth.signInWithEmailAndPassword(email, password)
+    .then((userCredential) => {
+      // Signed in
+      var user = userCredential.user;
+      console.log("Sesión iniciada");
+      verificarSesion();
+    })
+    .catch((error) => {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      console.log(errorCode, errorMessage);
+    });
