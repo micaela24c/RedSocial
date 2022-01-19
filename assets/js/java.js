@@ -5,12 +5,13 @@ $(document).ready(function () {
 
   // Your web app's Firebase configuration
   const firebaseConfig = {
-    apiKey: "AIzaSyAPIYPyY8ceO2VO_Ux2fkmOZP-Wk0tbzXA",
-    authDomain: "twitter-demo-fb461.firebaseapp.com",
-    projectId: "twitter-demo-fb461",
-    storageBucket: "twitter-demo-fb461.appspot.com",
-    messagingSenderId: "945517606063",
-    appId: "1:945517606063:web:39762d24d4930b0fe7905a"
+    apiKey: "AIzaSyDOU_2PB7bBegaKcc9RrILiDiiV4KpoO7I",
+    authDomain: "hoycomien-575d7.firebaseapp.com",
+    projectId: "hoycomien-575d7",
+    storageBucket: "hoycomien-575d7.appspot.com",
+    messagingSenderId: "146790859369",
+    appId: "1:146790859369:web:b985329bb4386fdd7458f8",
+    measurementId: "G-LGHHC1ZN6F"
   };
 
   // Initialize Firebase
