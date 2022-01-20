@@ -1,20 +1,19 @@
 body{
-    background-image:url(../images/com.jp) ;
-    background-color: #ef233c;
-    background-size: 100%;
-  }
+  background-color: #ef233c;
+  background-size: 100%;
+}
   
-  #logout{
-    color: black;
-    border-color: brown black
-  }
+#logout{
+  color: black;
+  border-color: black;
+}
   
-  #buttonRetro{
-    color: black;
-    border-color: brown black;
-  }
+#buttonRetro{
+  color: black;
+  border-color: rgb(0, 0, 0) black;
+}
   
-  .d-flex2 :hover{
-    background: #8d99ae;
-  }
+.d-flex2 :hover{
+  background: #8d99ae;
+}
   
