@@ -272,7 +272,7 @@ $(document).ready(function () {
       // Agregar escucha a todos los botones edit
       var btnsEdit = document.querySelectorAll(".btn-edit-post");
       btnsEdit.forEach(btn => {
-        btn.addEventListener("click", (e) => {
+        btn.click( (e) => {
           var id = e.target.dataset.id;
           // le paso el identificador a una funcion para actualizar dicho documento
           obtienePost(id);
@@ -408,6 +408,7 @@ $(document).ready(function () {
           <h4>${email}</h4>
         </div>
       `;
+      $("#userInfo").empty();
       $("#userInfo").append(html);
 
     }
