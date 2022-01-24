@@ -300,6 +300,7 @@ $(document).ready(function () {
   // Función que actualiza un posteo
   function obtienePost(id) {
     db.collection("posts").doc(id).get().then((doc) => {
+      console.log(doc.data());
       // Si existe el objeto, paso sus datos al formulario
       var post = doc.data();
       $("#postText").val(post.mensaje);
