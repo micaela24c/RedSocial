@@ -272,7 +272,7 @@ $(document).ready(function () {
       // Agregar escucha a todos los botones edit
       var btnsEdit = document.querySelectorAll(".btn-edit-post");
       btnsEdit.forEach(btn => {
-        btn.click( (e) => {
+        btn.addEventListener("click", (e) => {
           var id = e.target.dataset.id;
           // le paso el identificador a una funcion para actualizar dicho documento
           obtienePost(id);
