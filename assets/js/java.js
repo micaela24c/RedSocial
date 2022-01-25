@@ -480,7 +480,7 @@ $(document).ready(function () {
   }
 
   function Mensaje(){
-    alert("Gracias por calificar :)")
+    alert("Gracias por calificar :)");
   }
 
 });
