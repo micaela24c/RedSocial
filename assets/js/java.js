@@ -33,7 +33,7 @@ $(document).ready(function () {
 
   //------------------------------------------------------------------
 
-   $("#registrate").click(function (e) {
+  $("#registrate").click(function (e) {
     $("#btnRegistroConEmail").removeClass("d-none");
     $(".full-name-input").removeClass("d-none");
     $("#btnIngresoConEmail").addClass("d-none");
@@ -170,7 +170,7 @@ $(document).ready(function () {
         hora: strHours,
         date: datePostDB(),
         orderDate: orderDate(),
-        idUser: user.uid ,
+        idUser: user.uid,
         userName: user.displayName,
         urltext: ""
       })
@@ -238,7 +238,7 @@ $(document).ready(function () {
       data.forEach(doc => {
         var post = doc.data();
         var div = ``;
-        if (user.uid == post.idUser){
+        if (user.uid == post.idUser) {
           div = `
           <div class="card bg-dark text-white  mt-3 mx-auto" style="max-width: 800px;">
             <div class="card-body">
@@ -265,7 +265,7 @@ $(document).ready(function () {
           </div>
         `;
         }
-        
+
         html += div;
       });
       $("#postList").append(html);
@@ -285,7 +285,7 @@ $(document).ready(function () {
           var id = e.target.dataset.id;
           // le paso el identificador a una funcion para eliminar dicho documento
           deletePost(id);
-          
+
         })
       })
     }
@@ -459,6 +459,28 @@ $(document).ready(function () {
     return parseInt(`${year}${month}${day}${hour}${minute}${second}`, 0);
   };
 
+  // Funcion para calificación con estrellas
+  var contador;
+  function calificar(item) {
+    console.log(item);
+    contador = item.id[0];//captura el primer carácter
+    let nombre = item.id.substring(1);
 
+    for (let i = 0; i < 5; i++) {
+
+      if (i < count) {
+
+
+        document.getElementById((i + 1) + nombre).style.color = "orange";
+      } else {
+        document.getElementById((i + 1) + nombre).style.color = "black";
+
+      }
+    }
+  }
+
+  function Mensaje(){
+    alert("Gracias por calificar :)")
+  }
 
 });

@@ -176,14 +176,21 @@
                   rows="3"
                 ></textarea>
               <div>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                <span class="fas fa-star" style="cursor: pointer;" onclick="calificar(this)" id="1estrella"></span>
+                
+                <span class="fas fa-star" style="cursor: pointer;" onclick="calificar(this)" id="2estrella"></span>
 
+                <span class="fas fa-star" style="cursor: pointer;" onclick="calificar(this)" id="3estrella"></span>
+
+                <span class="fas fa-star" style="cursor: pointer;" onclick="calificar(this)" id="4estrella"></span>
+
+                <span class="fas fa-star" style="cursor: pointer;" onclick="calificar(this)" id="5estrella"></span>
+
+                <br><br>
+                <button class="btn btn-primary" onclick="Mensaje()"></button>
 
               </div>
+
                 <input type="text" id="idPost" class="d-none">
               </div>
               <label class="form-label" for="postFile">Upload</label>
