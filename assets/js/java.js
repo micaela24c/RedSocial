@@ -116,7 +116,7 @@ $(document).ready(function () {
   $("#logout").click(function (e) {
     e.preventDefault();
     auth.signOut().then(() => {
-      $("#userInfo").empty();
+    
       console.log("Usuario Desconectado")
     }).catch((error) => {
       // An error happened.
@@ -260,6 +260,7 @@ $(document).ready(function () {
           <div class="card bg-dark text-white  mt-3 mx-auto" style="max-width: 800px;">
             <div class="card-body">
               <p>${post.mensaje}</p>
+
               <img src="${post.urltext}" id="imagePost">
               <p>Publicado por ${post.userName}, el ${post.date}</p>
             </div>
