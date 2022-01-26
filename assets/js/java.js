@@ -459,28 +459,5 @@ $(document).ready(function () {
     return parseInt(`${year}${month}${day}${hour}${minute}${second}`, 0);
   };
 
-  // Funcion para calificación con estrellas
-  var contador;
-  function calificar(item) {
-    console.log(item);
-    contador = item.id[0];//captura el primer carácter
-    let nombre = item.id.substring(1);
-
-    for (let i = 0; i < 5; i++) {
-
-      if (i < count) {
-
-
-        document.getElementById((i + 1) + nombre).style.color = "orange";
-      } else {
-        document.getElementById((i + 1) + nombre).style.color = "black";
-
-      }
-    }
-  }
-
-  function Mensaje(){
-    alert("Gracias por calificar :)");
-  }
-
+ 
 });
