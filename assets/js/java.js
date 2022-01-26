@@ -116,6 +116,7 @@ $(document).ready(function () {
   $("#logout").click(function (e) {
     e.preventDefault();
     auth.signOut().then(() => {
+      $("#userInfo").empty();
       console.log("Usuario Desconectado")
     }).catch((error) => {
       // An error happened.
