@@ -388,7 +388,7 @@ $(document).ready(function () {
       if (user.photoURL != null) {
         photoURL = user.photoURL;
       } else {
-        photoURL = "https://w7.pngwing.com/pngs/831/88/png-transparent-user-profile-computer-icons-user-interface-mystique-miscellaneous-user-interface-design-smile.png"
+        photoURL = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
       }
       const emailVerified = user.emailVerified;
 
