@@ -51,7 +51,7 @@ $(document).ready(function () {
     auth.createUserWithEmailAndPassword(email, password)
       .then((userCredential) => {
         // Signed in
-        console.log("Usuario Creado");
+
         addFullName(fullName);
         $("#IngresoEmailForm").trigger("reset");
         // ...
@@ -59,7 +59,7 @@ $(document).ready(function () {
       .catch((error) => {
         var errorCode = error.code;
         var errorMessage = error.message;
-        console.log(errorCode, errorMessage)
+
         // ..
         if (errorCode == 'auth/email-already-in-use') {
           $("#alert-login-registro").removeClass("d-none");
@@ -79,7 +79,7 @@ $(document).ready(function () {
       .then((userCredential) => {
         // Signed in
 
-        console.log("Usuario Logueado con email y contraseña");
+
         $("#IngresoEmailForm").trigger("reset");
         $("#alert-login").hide();
         $("#alert-login-2").hide();
@@ -88,7 +88,7 @@ $(document).ready(function () {
       .catch((error) => {
         var errorCode = error.code;
         var errorMessage = error.message;
-        console.log(errorCode, errorMessage)
+
         if (errorCode == 'auth/argument-error' || errorCode == "auth/wrong-password") {
           $("#alert-login").removeClass("d-none");
           $("#alert-login").addClass("d-block");
@@ -106,9 +106,9 @@ $(document).ready(function () {
     auth
       .signInWithPopup(provider)
       .then((result) => {
-        console.log("Ingreso con Google");
+
       }).catch((error) => {
-        console.log(error);
+
       })
   });
 
@@ -116,8 +116,9 @@ $(document).ready(function () {
   $("#logout").click(function (e) {
     e.preventDefault();
     auth.signOut().then(() => {
-    
-      console.log("Usuario Desconectado")
+
+  
+      $("#userInfo").empty();
     }).catch((error) => {
       // An error happened.
     });
@@ -176,7 +177,7 @@ $(document).ready(function () {
         urltext: ""
       })
         .then((docRef) => {
-          console.log("Datos guardados correctamente.");
+
           $("#postForm").trigger("reset");
           var id = docRef.id;
           if (file != null) {
@@ -214,7 +215,7 @@ $(document).ready(function () {
         orderDate: orderDate(),
       })
         .then(() => {
-          console.log("Posteo actualizado correctamente.");
+
           $("#postForm").trigger("reset");
           obtienePosts();
 
@@ -309,7 +310,7 @@ $(document).ready(function () {
   // Función que actualiza un posteo
   function obtienePost(id) {
     db.collection("posts").doc(id).get().then((doc) => {
-      console.log(doc.data());
+
       // Si existe el objeto, paso sus datos al formulario
       var post = doc.data();
       $("#postText").val(post.mensaje);
@@ -318,7 +319,7 @@ $(document).ready(function () {
       $("#btnSavePost").removeClass("d-none");
       $("#btnSavePost").show();
     }).catch((error) => {
-      console.log("El error es: ", error);
+
     });
   }
   // Funcion para eliminar posteo
@@ -328,7 +329,7 @@ $(document).ready(function () {
       obtienePosts();
       window.location.reload();
     }).catch((error) => {
-      console.log("Error al eliminar el posteo", error)
+
     })
   }
 
@@ -343,13 +344,13 @@ $(document).ready(function () {
       (snapshot) => {
         // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
         var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-        console.log('Upload is ' + progress + '% done');
+
         switch (snapshot.state) {
           case firebase.storage.TaskState.PAUSED: // or 'paused'
-            console.log('Upload is paused');
+
             break;
           case firebase.storage.TaskState.RUNNING: // or 'running'
-            console.log('Upload is running');
+
             break;
         }
       },
@@ -387,7 +388,7 @@ $(document).ready(function () {
   // Funcion para cargar datos del usuario
   function loadUserInfo() {
     const user = firebase.auth().currentUser;
-    console.log(user);
+    
     let html = "";
     if (user !== null) {
       // The user object has basic properties such as display name, email, etc.
@@ -418,9 +419,12 @@ $(document).ready(function () {
           <h4>${email}</h4>
         </div>
       `;
-      $("#userInfo").empty();
+
       $("#userInfo").append(html);
 
+    }
+    else {
+      $("#userInfo").empty();
     }
   }
   // Funncion para agregar nombre despues de crear un usuario nuevo
@@ -468,5 +472,5 @@ $(document).ready(function () {
     return parseInt(`${year}${month}${day}${hour}${minute}${second}`, 0);
   };
 
- 
+
 });
