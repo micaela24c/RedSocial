@@ -279,6 +279,7 @@ $(document).ready(function () {
         html += div;
       });
       $("#postList").append(html);
+      $('div.rateit, span.rateit').rateit();
       // Agregar escucha a todos los botones edit
       var btnsEdit = document.querySelectorAll(".btn-edit-post");
       btnsEdit.forEach(btn => {
