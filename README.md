@@ -1,8 +1,8 @@
 # Red social
-![image](https://user-images.githubusercontent.com/93934167/151588149-d9da0f2f-a8a1-404f-97b9-456a52d2a418.png)
+![image](https://user-images.githubusercontent.com/93934167/151591445-b46bb6de-208f-45c8-aeff-253c709547a0.png)
 
 ## Público objetivo:
-![image](https://user-images.githubusercontent.com/93934167/151591044-9e1f2fee-3dc5-42e2-8d9c-f056fdbff995.png)
+![image](https://user-images.githubusercontent.com/93934167/151591262-28617fc9-9c03-42d3-a8ec-cfe46751a6a5.png)
 #### Todo público que desea escoger un buen restaurantes para comer y necesita recomendaciones y referencias de otros clientes.
 
 ## Propósito de la página web:
