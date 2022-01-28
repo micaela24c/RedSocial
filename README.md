@@ -12,6 +12,7 @@
 ## Nuestra red social "Hoy comeré en..."
 <img width="959" alt="primera vista" src="https://user-images.githubusercontent.com/93934167/151588703-29c6102f-bbe9-458e-84b5-bf0d92b446fa.png">
 #### Al entrar a la página podrás iniciar sesión o registrarte si aún no tienes una cuenta
+
 <img width="945" alt="sesion1" src="https://user-images.githubusercontent.com/93934167/151589227-066ace98-d041-441c-9c7c-38abd8edec05.png">
 #### Al entrar podrás ver tu perfil en la parte superior, las recomendaciones de otros usuarios a la derecha y calificar tu experiencia en un restaurante e incluir fotos si deseas a la izquierda.
 
