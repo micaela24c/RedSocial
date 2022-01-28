@@ -18,6 +18,7 @@ body{
 }
 
 .imagen_post{
-  max-height: 300px;
-  max-width: 300px;
+  height: 550px;
+  width: 550px;
+  float: center;
 }
