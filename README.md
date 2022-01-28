@@ -2,7 +2,7 @@
 ![image](https://user-images.githubusercontent.com/93934167/151591445-b46bb6de-208f-45c8-aeff-253c709547a0.png)
 
 ## Público objetivo:
-![image](https://user-images.githubusercontent.com/93934167/151591262-28617fc9-9c03-42d3-a8ec-cfe46751a6a5.png)
+![image](https://user-images.githubusercontent.com/93934167/151591678-9e41592c-8848-4cd2-860c-9dd671fc64e9.png)
 #### Todo público que desea escoger un buen restaurantes para comer y necesita recomendaciones y referencias de otros clientes.
 
 ## Propósito de la página web:
