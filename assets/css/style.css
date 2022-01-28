@@ -16,4 +16,8 @@ body{
 .d-flex2 :hover{
   background: #8d99ae;
 }
-  
+
+.imagen_post{
+  max-height: 300px;
+  max-width: 300px;
+}
