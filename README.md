@@ -19,4 +19,6 @@
 
 #### Al entrar podrás ver tu perfil en la parte superior, las recomendaciones de otros usuarios a la derecha y calificar tu experiencia en un restaurante e incluir fotos si deseas a la izquierda.
 
+¡Ahora ya puedes publicar todas tus opiniones sobre los distintos restaurantes que visitas! 
+
 #### Hecho por: Micaela, Arellys Y Verónica
